@@ -1,0 +1,12 @@
+import naves.*
+
+describe "testX" {
+	var naveCombate = new NaveCombate(estaInvisible = false, misilesDesplegados = false, velocidad = 0, direccion = 0, combustible = 0)
+	
+	test ""{
+		naveCombate.prepararViaje()
+		assert.equals(20000, naveCombate.velocidad())
+		assert.equals(30000, naveCombate.combustible())
+	}
+
+}
